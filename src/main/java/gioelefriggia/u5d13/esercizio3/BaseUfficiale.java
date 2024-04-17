@@ -1,29 +1,20 @@
 package gioelefriggia.u5d13.esercizio3;
 
+import lombok.Getter;
+import lombok.Setter;
+
 // Classe base per gli ufficiali militari
 public abstract class BaseUfficiale implements Ufficiale {
+    @Setter
     private Ufficiale responsabile;
+    @Getter
     private String nome;
+    @Getter
+    @Setter
     private double stipendio;
 
     public BaseUfficiale(String nome, double stipendio) {
         this.nome = nome;
-        this.stipendio = stipendio;
-    }
-
-    public void setResponsabile(Ufficiale responsabile) {
-        this.responsabile = responsabile;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public double getStipendio() {
-        return stipendio;
-    }
-
-    public void setStipendio(double stipendio) {
         this.stipendio = stipendio;
     }
 
