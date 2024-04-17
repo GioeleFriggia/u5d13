@@ -1,4 +1,4 @@
-package gioelefriggia.u5d13;
+package gioelefriggia.u5d13.esercizio1;
 
 
 public interface DataSource {
