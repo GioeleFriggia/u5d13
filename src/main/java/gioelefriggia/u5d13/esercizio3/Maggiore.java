@@ -1,7 +1,7 @@
 package gioelefriggia.u5d13.esercizio3;
 
-public class Generale extends BaseUfficiale {
-    public Generale(String nome, double stipendio) {
+public class Maggiore extends BaseUfficiale {
+    public Maggiore(String nome, double stipendio) {
         super(nome, stipendio);
     }
 
@@ -10,7 +10,7 @@ public class Generale extends BaseUfficiale {
         if (richiesta.getImporto() <= getStipendio()) {
             System.out.println(getNome() + " può gestire la richiesta di $" + richiesta.getImporto());
         } else {
-            System.out.println("Richiesta non gestita.");
+            inviaRichiestaAlResponsabile(richiesta);
         }
     }
 }

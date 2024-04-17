@@ -1,6 +1,5 @@
 package gioelefriggia.u5d13.esercizio3;
 
-
 // Classe base per gli ufficiali militari
 public abstract class BaseUfficiale implements Ufficiale {
     private Ufficiale responsabile;

@@ -7,8 +7,8 @@ public class Capitano extends BaseUfficiale {
 
     @Override
     public void gestisciRichiesta(Richiesta richiesta) {
-        if (richiesta.getLivello() <= 6) {
-            System.out.println("Richiesta gestita dal Capitano " + getNome());
+        if (richiesta.getImporto() <= getStipendio()) {
+            System.out.println(getNome() + " può gestire la richiesta di $" + richiesta.getImporto());
         } else {
             inviaRichiestaAlResponsabile(richiesta);
         }
